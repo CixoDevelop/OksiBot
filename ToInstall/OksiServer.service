@@ -1,0 +1,12 @@
+[Unit]
+Description=Starts oksi-bot REST api on all interfaces
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/Oksi/OksiServer
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
